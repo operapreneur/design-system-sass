@@ -1,0 +1,31 @@
+
+/// @name Color-mixins
+
+/// @output Text color property 
+@mixin text-color-variant($parent, $color) {
+  #{$parent} {
+    color: $color;
+  }
+}
+
+/// @output background-color property 
+@mixin bg-color-variant($parent, $color) {
+  #{$parent} {
+    background-color: $color;
+  }
+}
+
+/// @output Link color, backrgound-color, and hover state properties
+// @mixin link-color-variant($parent, $color) {
+//   a#{$parent} {
+//     @include hover-focus {
+//       color: darken($color, 10%);
+//     }
+//   }
+// a#{$parent},
+//   button#{$parent} {
+//     @include hover-focus {
+//       background-color: darken($color, 10%) !important;
+//     }
+//   }
+// }

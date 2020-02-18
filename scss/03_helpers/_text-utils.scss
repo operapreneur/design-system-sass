@@ -1,0 +1,57 @@
+
+/// @name Text-utilities
+/// text-color, text-align, text-decoration, text-transform, text-indent, text-truncate white-space
+
+
+/// @group Theme-text-colors
+@each $color, $value in $theme-colors {
+  @include text-color-variant(".text-#{$color}", $value);
+}
+/// @group Gray-text-colors
+@each $color, $value in $theme-grays {
+  @include text-color-variant(".text-#{$color}", $value);
+}
+/// @group Utility-text-colors
+@each $color, $value in $utility-colors {
+  @include text-color-variant(".text-#{$color}", $value);
+}
+
+
+/// @group Responsive-text-align
+/// @requires Bootstrap-mixins
+/// @todo Remove Bootstrap dependency
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    .text#{$infix}-left   { text-align: left; }
+    .text#{$infix}-right  { text-align: right; }
+    .text#{$infix}-center { text-align: center; }
+  }
+}
+.text-justify { text-align: justify; }
+
+
+/// @group text-decoration
+.text-decoration-none { text-decoration: none !important; }
+
+
+/// @group text-transform
+.text-lowercase  { text-transform: lowercase; }
+.text-uppercase  { text-transform: uppercase; }
+.text-capitalize { text-transform: capitalize; }
+
+
+/// @group text-misc
+.nowrap { white-space: nowrap; }
+.indent {text-indent: 1em;}
+.text-truncate {
+  /// Requires inline-block or block for proper styling
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+ }
+ .text-break {
+  word-break: break-word !important; // IE & < Edge 18
+  overflow-wrap: break-word !important;
+}

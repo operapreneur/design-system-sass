@@ -1,0 +1,10 @@
+
+/// @name HTML-links
+/// HTML element styles
+
+/// @group link-vars
+/// @requires 00_abstracts/_var-colors.scss
+$link-color:            $guardsman-red !default;
+$link-decoration:       none !default;
+$link-hover-color:      darken($link-color, 15%) !default;
+$link-hover-decoration: underline !default;

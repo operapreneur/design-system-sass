@@ -1,0 +1,8 @@
+
+/// @name Backrgound-properties
+/// background-color
+
+/// @output background-color property 
+@each $color, $value in $theme-colors {
+  @include bg-color-variant(".bg-#{$color}", $value);
+}

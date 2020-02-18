@@ -1,0 +1,16 @@
+
+/// @name Sizing-vars
+/// @link https://getbootstrap.com/docs/4.4/utilities/sizing/
+/// This variable affects the `.h-*` and `.w-*` classes.
+
+$sizes: () !default;
+$sizes: map-merge(
+  (
+    25: 25%,
+    50: 50%,
+    75: 75%,
+    100: 100%,
+    auto: auto
+  ),
+  $sizes
+);

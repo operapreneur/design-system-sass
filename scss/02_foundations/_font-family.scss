@@ -1,0 +1,36 @@
+
+/// @name Font-family
+/// font-family, font-weight, font-style, font-variant
+
+
+/// @group font-family
+html,
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  line-height: 1.15; /// @alias RESET-document Correct the line height in all browsers.
+}
+
+
+/// @group font-weight
+body,
+.font-weight-normal { 
+  font-weight: $font-weight-normal; 
+}
+b,
+strong, 
+.font-weight-bold {
+  font-weight: bolder;
+  font-weight: $font-weight-bold;
+}
+.font-weight-light { font-weight: $font-weight-light; }
+
+
+/// @group font-style
+i,
+em,
+.font-italic { 
+  font-style: italic; 
+}
+
+/// @group font-variant
+.small-caps {font-variant: small-caps;}

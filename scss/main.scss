@@ -1,0 +1,40 @@
+
+/// Uses Sass Doc annotations
+/// @link http://sassdoc.com/annotations/
+
+
+/// @name main.scss - imports all files
+/// Can use sass glob imports
+/// @example - @import "vars/**/*.scss";
+/// @link https://www.npmjs.com/package/gulp-sass-glob
+
+// 00_abstracts
+@import "00_abstracts/*.scss";
+
+// 01_vendors
+@import "01_vendors/bootstrap-grid/*.scss";
+@import "01_vendors/grid.scss";
+
+// 02_foundations
+@import "02_foundations/*.scss";
+
+// 03_helpers
+@import "03_helpers/*.scss";
+
+// 04_elements
+@import "04_elements/*.scss";
+
+// 05_components
+// @import "05_components/*.scss";
+
+// 06_modules
+// @import "06_modules/*.scss";
+
+// 07_templates
+// @import "07_templates/*.scss";
+
+// 08_pages
+// @import "08_pages/*.scss";
+
+// Print styles
+@import "print.scss";

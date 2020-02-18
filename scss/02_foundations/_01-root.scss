@@ -1,0 +1,15 @@
+
+/// @name Root-elements
+/// @link https://developer.mozilla.org/en-US/docs/Web/CSS/:root
+
+:root {
+  @each $color, $value in $theme-colors {
+    --#{$color}: #{$value};
+  }
+  @each $color, $value in $theme-grays {
+    --#{$color}: #{$value};
+  }
+  @each $color, $value in $utility-colors {
+    --#{$color}: #{$value};
+  }
+}

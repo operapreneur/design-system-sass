@@ -1,0 +1,17 @@
+
+/// @name Print-styles
+///
+
+
+/// @group print-settings
+$print-page-size:       a3 !default;
+$print-body-min-width:  map-get($grid-breakpoints, "lg") !default;
+
+
+/// @group print-display
+/// @requires 03_helpers/_display.scss
+@media print {
+  @each $value in $displays {
+    .d-print-#{$value} { display: $value !important; }
+  }
+}

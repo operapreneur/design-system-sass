@@ -1,0 +1,20 @@
+
+/// @name Font-variables
+/// All font variables used in this theme
+
+$font-size-base:  1rem !default; /// Assume browser default
+$font-size-small: $font-size-base * .8 !default;
+
+/// @group Font-weight
+$font-weight-light:  300 !default;
+$font-weight-normal: 400 !default;
+$font-weight-bold:   700 !default;
+
+/// @group Default-headings
+/// Normalize the headings
+$headline-page:     $font-size-base * 3 !default;
+$headline-section:  $font-size-base * 2.25 !default;
+$subhead-1:         $font-size-base * 1.75 !default;
+$subhead-2:         $font-size-base * 1.5 !default;
+$subhead-3:         $font-size-base * 1.25 !default;
+$subhead-4:         $font-size-base * 1.125 !default;

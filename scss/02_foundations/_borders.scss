@@ -1,0 +1,68 @@
+
+/// @name Borders
+///  
+
+/// @group border-vars
+/// Border color is declared in color vars
+$border-width:     1px !default;
+$border-radius:    .25rem !default;
+$border-radius-lg: .3rem !default;
+$border-radius-sm: .2rem !default;
+$rounded-pill:     50rem !default;
+
+/// @group border-utils
+.border         { border: $border-width solid $border-color; }
+.border-top     { border-top: $border-width solid $border-color; }
+.border-right   { border-right: $border-width solid $border-color; }
+.border-bottom  { border-bottom: $border-width solid $border-color; }
+.border-left    { border-left: $border-width solid $border-color; }
+
+.border-0        { border: 0; }
+.border-top-0    { border-top: 0; }
+.border-right-0  { border-right: 0; }
+.border-bottom-0 { border-bottom: 0; }
+.border-left-0   { border-left: 0; }
+
+
+/// @group border-colors
+@each $color, $value in $utility-colors {
+  .border-#{$color} {
+    border-color: $value;
+  }
+}
+@each $color, $value in $theme-grays {
+  .border-#{$color} {
+    border-color: $value;
+  }
+}
+@each $color, $value in $theme-colors {
+  .border-#{$color} {
+    border-color: $value;
+  }
+}
+
+
+/// @group border-radius
+.rounded-sm {border-radius: $border-radius-sm;}
+.rounded {border-radius: $border-radius;}
+.rounded-top {
+  border-top-left-radius: $border-radius;
+  border-top-right-radius: $border-radius;
+}
+.rounded-right {
+  border-top-right-radius: $border-radius;
+  border-bottom-right-radius: $border-radius;
+}
+.rounded-bottom {
+  border-bottom-right-radius: $border-radius;
+  border-bottom-left-radius: $border-radius;
+}
+.rounded-left {
+  border-top-left-radius: $border-radius;
+  border-bottom-left-radius: $border-radius;
+}
+.rounded-lg {border-radius: $border-radius-lg;}
+.rounded-circle {border-radius: 50%;}
+.rounded-pill {border-radius: $rounded-pill;}
+.rounded-0 {border-radius: 0;}
+

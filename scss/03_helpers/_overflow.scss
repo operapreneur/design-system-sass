@@ -1,0 +1,9 @@
+
+/// @name Overflow
+///
+
+$overflows: auto, hidden !default;
+
+@each $value in $overflows {
+  .overflow-#{$value} { overflow: $value !important; }
+}

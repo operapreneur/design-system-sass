@@ -1,0 +1,77 @@
+
+/// @name Color-palette
+/// All colors used in this theme
+$guardsman-red: rgb(188,0,0); /// Guardsman Red
+$dark-blue: rgb(0,0,188); /// Dark Blue
+$malachite: rgb(0,200,83); /// Malachite
+$persian-green: rgb(0,188,188); /// Persian Green
+$jazzberry-jam: rgb(197,17,98); /// Jazzberry Jam
+$pacific-blue: rgb(0,184,212); /// Pacific Blue
+$blaze-orange: rgb(255,109,0); /// Blaze Orange
+$pear: rgb(219,229,22); /// Pear
+$alizarin-crimson: rgb(220,53,69); /// Alizarin Crimson
+
+/// @group Theme-colors
+$theme-colors: () !default;
+$theme-colors: map-merge(
+  (
+    "red":        $guardsman-red,
+    "blue":       $dark-blue,
+    "green":      $malachite,
+    "teal":       $persian-green,
+    "pink":       $jazzberry-jam,
+    "light-blue": $pacific-blue,  
+    "orange":     $blaze-orange,
+    "yellow":     $pear
+  ),
+  $theme-colors
+);
+
+
+/// @name Grays-palette
+$white: rgb(255,255,255); /// White
+$black: rgb(0,0,0); /// Black
+$dark-gray: rgb(65,65,65); /// Dark Gray
+$dove-gray: rgb(113,113,113); /// Dove Gray
+$light-gray: rgb(238,238,238); /// Light Gray
+
+/// @group Gray-colors
+$theme-grays: () !default;
+$theme-grays: map-merge(
+  (
+    "white":        $white,
+    "black":        $black,
+    "dark-gray":    $dark-gray,
+    "medium-gray":  $dove-gray,
+    "light-gray":   $light-gray
+  ),
+  $theme-grays
+);
+
+
+/// @name Utility-colors
+/// Colors used to inform the user of purpose
+$primary:       $guardsman-red !default;
+$secondary:     $dark-blue !default;
+$success:       $malachite !default;
+$info:          $pacific-blue !default;
+$warning:       $pear !default;
+$danger:        $alizarin-crimson !default;
+
+/// @group Theme-utility
+$utility-colors: () !default;
+$utility-colors: map-merge(
+  (
+    "primary":    $primary,
+    "secondary":  $secondary,
+    "success":    $success,
+    "info":       $info,
+    "warning":    $warning,
+    "danger":     $danger
+  ),
+  $utility-colors
+);
+
+
+/// @group Misc-colors
+$border-color: $dove-gray !default;

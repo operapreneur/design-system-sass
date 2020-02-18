@@ -1,0 +1,6 @@
+{
+  "src": {
+    "sassSrc": "./scss/**/*.scss",
+    "css": "./src/css"
+  }
+}
