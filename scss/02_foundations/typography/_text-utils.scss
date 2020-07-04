@@ -1,7 +1,12 @@
 
 /// @name Text-utilities
-/// text-color, text-align, text-decoration, text-transform, text-indent, text-truncate white-space
+/// super/sup-scripts, text-color, text-align, text-decoration, text-transform, text-misc
 
+/// @group super/sup-scripts
+sub, 
+sup {
+  font-size: 65%;
+}
 
 /// @group Theme-text-colors
 @each $color, $value in $theme-colors {

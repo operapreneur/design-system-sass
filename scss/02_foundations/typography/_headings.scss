@@ -1,0 +1,31 @@
+
+/// @name headings
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family:  Helvetica, Arial, sans-serif;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: $headline-page;
+}
+h2 {
+  font-size: $headline-section;
+}
+h3 {
+  font-size: $subhead-1;
+}
+h4 {
+  font-size: $subhead-2;
+}
+h5 {
+  font-size: $subhead-3;
+}
+h6 {
+  font-size: $subhead-4;
+}

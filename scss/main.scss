@@ -9,13 +9,16 @@
 /// @link https://www.npmjs.com/package/gulp-sass-glob
 
 // 00_abstracts
-@import "00_abstracts/*.scss";
+@import "00_abstracts/variables/*.scss";
+@import "00_abstracts/mixins/*.scss";
 
 // 01_vendors
 @import "01_vendors/bootstrap-grid/*.scss";
-@import "01_vendors/grid.scss";
 
 // 02_foundations
+@import "02_foundations/base/*.scss";
+@import "02_foundations/layout/*.scss";
+@import "02_foundations/typography/*.scss";
 @import "02_foundations/*.scss";
 
 // 03_helpers

@@ -1,5 +1,5 @@
 
-/// @name Font-family
+/// @name font-general
 /// font-family, font-weight, font-style, font-variant
 
 
@@ -12,22 +12,24 @@ body {
 
 
 /// @group font-weight
-body,
-.font-weight-normal { 
+body, 
+.font-regular { 
   font-weight: $font-weight-normal; 
 }
-b,
+b, 
 strong, 
-.font-weight-bold {
+.font-bold  {
   font-weight: bolder;
   font-weight: $font-weight-bold;
 }
-.font-weight-light { font-weight: $font-weight-light; }
+.font-light { 
+  font-weight: $font-weight-light; 
+}
 
 
 /// @group font-style
-i,
 em,
+i,
 .font-italic { 
   font-style: italic; 
 }
